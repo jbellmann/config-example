@@ -1,1 +1,3 @@
 bar: foo
+# encrypted value
+fooBar: '{cipher}6fb16d1f812cd8c2b0d1cc43e0b9bbf66291f17b84942598395caf0d4724aa1b'
