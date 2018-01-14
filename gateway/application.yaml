@@ -1,0 +1,9 @@
+server:
+  use-forward-headers: true
+  port: 8080
+
+management:
+  port: 7979
+  context-path: /management
+  security:
+    enabled: false
