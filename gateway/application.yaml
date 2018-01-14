@@ -13,3 +13,11 @@ zuul:
     app:
       path: /app/**
       url: http://ui.default.svc.cluster.local
+
+spring:
+  boot:
+    admin:
+      url: http://boot-admin.default.svc.cluster.local
+      client:
+        prefer-ip: true
+        enabled: true
