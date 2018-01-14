@@ -7,3 +7,9 @@ management:
   context-path: /management
   security:
     enabled: false
+
+zuul:
+  routes:
+    app:
+      path: /app/**
+      url: http://ui.default.svc.cluster.local
