@@ -32,4 +32,5 @@ zuul:
   routes:
     app:
       path: /app/**
-      url: http://localhost:4200
+      url: http://siggi-ci-app.default.svc.cluster.local
+
