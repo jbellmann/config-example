@@ -35,5 +35,5 @@ zuul:
       url: http://siggi-ci-app.default.svc.cluster.local
     hooks:
       path: /hooks/**
-      url: http://szwo-common.default.svc.cluster.local
+      url: http://szwo-standalone.default.svc.cluster.local
 
