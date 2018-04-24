@@ -36,4 +36,5 @@ zuul:
     hooks:
       path: /hooks/**
       url: http://szwo-standalone.default.svc.cluster.local
+      strip-prefix: false
 
