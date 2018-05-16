@@ -1,0 +1,30 @@
+management:
+  server:
+    port: 7979
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.jdbc.lob.non_contextual_creation: true
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.PostgreSQL95Dialect
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://siggi-postgresql.default.svc.cluster.local:5432/szwo_standalone?currentSchema=szwo
+    username: {cipher}c178003e63bc0b192319ccd2a4278522b422b9a4673ed2582a7bec3b46d2caa3
+    password: {cipher}93c20aae4c944f9f8e7e56b0eb54a0623cea71fbd1a6932ed0cee3be1d27ecbb
+    driver-class-name: org.postgresql.Driver
+
+  flyway:
+    user: {cipher}a621bbf3b4464516580455be476453955bdc70539ad36f87e4a80ca59b27c052a6d2686629e4e964d027ea3ecf5756da
+    password: {cipher}4aa6791e3eab9ac9730167faa88c49e7aba9a96efba1bbe469700eec30b6f60b
+    locations: classpath:db/migration
+    schemas: szwo
+    url: jdbc:postgresql://siggi-postgresql.default.svc.cluster.local:5432/szwo_standalone
