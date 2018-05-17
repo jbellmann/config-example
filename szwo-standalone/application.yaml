@@ -1,10 +1,6 @@
 management:
   server:
     port: 7979
-  endpoints:
-    web:
-      exposure:
-        include: '*'
 
 spring:
   jpa:
