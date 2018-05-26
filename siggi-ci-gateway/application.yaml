@@ -37,4 +37,8 @@ zuul:
       path: /hooks/**
       url: http://szwo-standalone.default.svc.cluster.local
       strip-prefix: false
+    projects-api:
+      path: /api/projects/**
+      url: http://szwo-standalone.default.svc.cluster.local
+      strip-prefix: false
 
