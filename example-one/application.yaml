@@ -1,3 +1,3 @@
 bar: foo
 # encrypted value
-fooBar: '{cipher}6fb16d1f812cd8c2b0d1cc43e0b9bbf66291f17b84942598395caf0d4724aa1b'
+fooBar: '{cipher}aa54bf95fc2bf6ebffa8381fe596399efd8d6ccc8699eea72d9d390a28a27efa'
