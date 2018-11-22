@@ -22,7 +22,9 @@ management:
 server:
   use-forward-headers: true
   tomcat:
-    internal-proxies: '{cipher}3ad4f9c39b9a347163eaa439e09077466fec2b97c0f5b83595006f266bedd788f659014b12fc6c1d1755c6588cbcbf39c006aa2aae842f496a93680a20818e0c2a071f245fe04cf27b65f5fe5bd7f05cf2f7edac5ca23838d284c5b676c8b539407cc6c9a0f24014f6e2398e3de5b60ebb6a9969ce474b812365c980435501ba268aa918d29739705af7d9a617da838614242993ff43c419008ea034c61cad5838fb5a269fad2ddec41042751b8751d1cf6cb845c85695ac9cfd7e45affcd22aaabde275966a933a36c4fb8491e85bd1e5b493a3c47152f0b27fb8641427889e070106ab9117611aba6e79665ff9172359ffe976a2711fbcc4b79d0e5784df75'
+    port-header: X-Forwarded-Port
+    protocol-header: X-Forwarded-Proto
+    remote-ip-header: X-Forwarded-For
 
 zuul:
   host:
