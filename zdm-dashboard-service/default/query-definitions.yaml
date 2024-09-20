@@ -1,0 +1,9 @@
+custom-definitions:
+  - title: one
+    description: 'A description for one'
+    extractor: '$.total'
+    query: 'mii:/fhir/R4/Patient?gender=other&_summary=count&_format=json'
+  - title: two
+    description: 'A description for two'
+    extractor: '$.total'
+    query: 'mii:/fhir/R4/Encounter?gender=other&_summary=count&_format=json'
